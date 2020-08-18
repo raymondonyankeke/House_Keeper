@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.EditMaidActivity"
+    android:orientation="vertical"
+    android:layout_margin="32dp">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edit_maid_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:layout_marginBottom="16dp"
+                android:textColorHint="@color/colorBlack"
+                android:textColorHighlight="@color/colorBlack"
+                android:hint="Name"/>
+
+            <EditText
+                android:id="@+id/edit_maid_contact_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:layout_marginBottom="16dp"
+                android:textColorHint="@color/colorBlack"
+                android:textColorHighlight="@color/colorBlack"
+                android:hint="Contact Number"/>
+
+            <EditText
+                android:id="@+id/edit_maid_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:textColorHint="@color/colorBlack"
+                android:textColorHighlight="@color/colorBlack"
+                android:minLines="10"
+                android:maxLines="35"
+                android:hint="Description"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Services"
+            android:textSize="16sp"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+
+
+            <CheckBox
+                android:id="@+id/rb_laundry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Laundry"/>
+
+            <CheckBox
+                android:id="@+id/rb_washing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Washing"/>
+
+            <CheckBox
+                android:id="@+id/rb_dry_cleaning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dry Cleaning"/>
+
+            <CheckBox
+                android:id="@+id/rb_light_cleaning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Light Cleaning"/>
+
+            <CheckBox
+                android:id="@+id/rb_clothes_duties"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Clothes Duties"/>
+
+            <CheckBox
+                android:id="@+id/rb_running_errands"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Running Errands"/>
+
+            <CheckBox
+                android:id="@+id/rb_preparing_meals"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Preparing Meals"/>
+
+
+            <Button
+                android:id="@+id/update_maid_button"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:text="Submit"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:background="@color/colorBlack"
+                android:textColor="@color/colorWhite"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

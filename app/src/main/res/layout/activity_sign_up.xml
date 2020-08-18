@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity"
+    android:orientation="vertical"
+    android:layout_margin="32dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textSize="32sp"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Account Details"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:layout_marginBottom="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/email_sign_up_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="16dp"
+            android:textColorHint="@color/colorGrey"
+            android:textColorHighlight="@color/colorBlack"
+            android:hint="E-mail"/>
+
+        <EditText
+            android:id="@+id/password_sign_up_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:layout_marginBottom="16dp"
+            android:textColorHint="@color/colorGrey"
+            android:textColorHighlight="@color/colorBlack"
+            android:hint="Password"/>
+
+        <EditText
+            android:id="@+id/confirm_password_sign_up_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:layout_marginBottom="16dp"
+            android:textColorHint="@color/colorGrey"
+            android:hint="Confirm Password"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="User Details"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:layout_marginBottom="16dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/full_name_sign_up_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_marginBottom="16dp"
+            android:textColorHint="@color/colorGrey"
+            android:textColorHighlight="@color/colorBlack"
+            android:hint="Full Name"/>
+
+        <EditText
+            android:id="@+id/contact_number_sign_up_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:layout_marginBottom="16dp"
+            android:textColorHint="@color/colorGrey"
+            android:textColorHighlight="@color/colorBlack"
+            android:hint="Contact Number"/>
+
+        <EditText
+            android:id="@+id/address_sign_up_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_marginBottom="16dp"
+            android:textColorHint="@color/colorGrey"
+            android:textColorHighlight="@color/colorBlack"
+            android:hint="Complete Address"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit_sign_up_button"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Submit"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:background="@color/colorBlack"
+        android:textColor="@color/colorWhite"/>
+
+</LinearLayout>

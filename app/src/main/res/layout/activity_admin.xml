@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.AdminActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/add_maids"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:text="Add Maids"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:textColor="@color/colorWhite" />
+
+<!--        <Button-->
+<!--            android:id="@+id/add_services"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="75dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:text="Add Category"-->
+<!--            android:textSize="14sp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:maxLines="1"-->
+<!--            android:textColor="@color/colorWhite" />-->
+
+        <Button
+            android:id="@+id/log_out"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:text="Log Out"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:textColor="@color/colorWhite" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/admin_search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search"
+        android:drawableStart="@drawable/ic_search_black_24dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="16dp"
+        android:textSize="14sp"
+        android:layout_marginBottom="12dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/admin_maid_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

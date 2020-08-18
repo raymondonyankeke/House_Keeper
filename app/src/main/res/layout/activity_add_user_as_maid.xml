@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.AddMaidActivity"
+    android:layout_margin="32sp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register as Maid"
+        android:textSize="32sp"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/add_image_as_maid"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_add_a_photo_black_24dp"
+                    android:layout_marginBottom="16dp"
+                    android:scaleType="centerCrop"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add an Image"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="24sp"
+                    android:padding="8dp"
+                    android:layout_gravity="center_horizontal"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginBottom="16dp"
+                android:textColorHint="@color/colorBlack"
+                android:textColorHighlight="@color/colorBlack"
+                android:text="Name"/>
+
+            <TextView
+                android:id="@+id/user_contact_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginBottom="16dp"
+                android:textColorHint="@color/colorBlack"
+                android:textColorHighlight="@color/colorBlack"
+                android:text="Contact Number"/>
+
+            <EditText
+                android:id="@+id/user_as_maid_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:textColorHint="@color/colorBlack"
+                android:textColorHighlight="@color/colorBlack"
+                android:minLines="5"
+                android:maxLines="35"
+                android:hint="Description"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Services"
+                android:textSize="16sp"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
+
+
+            <CheckBox
+                android:id="@+id/cb_laundry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Laundry"/>
+
+            <CheckBox
+                android:id="@+id/cb_washing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Washing"/>
+
+            <CheckBox
+                android:id="@+id/cb_dry_cleaning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dry Cleaning"/>
+
+            <CheckBox
+                android:id="@+id/cb_light_cleaning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Light Cleaning"/>
+
+            <CheckBox
+                android:id="@+id/cb_clothes_duties"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Clothes Duties"/>
+
+            <CheckBox
+                android:id="@+id/cb_running_errands"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Running Errands"/>
+
+            <CheckBox
+                android:id="@+id/cb_preparing_meals"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Preparing Meals"/>
+
+
+            <Button
+                android:id="@+id/submit_maid_button"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:text="Submit"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:background="@color/colorBlack"
+                android:textColor="@color/colorWhite"/>
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

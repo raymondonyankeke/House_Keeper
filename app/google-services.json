@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "243324173009",
+    "firebase_url": "https://house-keeper-7b600.firebaseio.com",
+    "project_id": "house-keeper-7b600",
+    "storage_bucket": "house-keeper-7b600.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:243324173009:android:036e117d625c1428e3e3f0",
+        "android_client_info": {
+          "package_name": "com.java.housekeeper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "243324173009-neb2m72v6kkm6e4t1at8en1vi3kkomm6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.java.housekeeper",
+            "certificate_hash": "84194f1807d7c4e234fcb4dcddcbb9689f9c29c9"
+          }
+        },
+        {
+          "client_id": "243324173009-p89kegornd5fdolfrnudi5h3gdah519d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGEONhVVotsvyaj2iR_EVzglfzlXr1iiw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "243324173009-p89kegornd5fdolfrnudi5h3gdah519d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

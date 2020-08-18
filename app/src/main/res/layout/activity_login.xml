@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:layout_margin="32dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="32sp"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp"/>
+
+    <EditText
+        android:id="@+id/email_sign_in_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="16dp"
+        android:textColorHint="@color/colorBlack"
+        android:hint="E-mail"/>
+
+    <EditText
+        android:id="@+id/password_sign_in_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_marginBottom="16dp"
+        android:textColorHint="@color/colorBlack"
+        android:hint="Password"/>
+
+    <Button
+        android:id="@+id/submit_sign_in_button"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Submit"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:background="@color/colorBlack"
+        android:textColor="@color/colorWhite"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/reset_password_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Password Reset"
+        android:textColor="@color/colorGrey"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/sign_up_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New user? Sign Up"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:layout_marginBottom="16dp"/>
+</LinearLayout>
